@@ -31,13 +31,11 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Column(
-        children: <Widget>[
-          Padding(
+      body: SingleChildScrollView(
+        child: Padding(
             padding: EdgeInsets.all(10.0),
             child: FormFields(),
           )
-        ],
       ),
     );
   }
